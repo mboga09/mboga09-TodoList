@@ -61,7 +61,7 @@ const Home = () => {
 						<ul className="list-group">
 							{lista && lista.length > 0 ? //Para eliminar tareas:
 								<>{ //recordar agregar siempre el elemento key para .map
-									lista.map((item, index) => {return <li className="list-group-item ps-5 py-3" key={index}>{item} <button className="buttonStyle" type="button" onClick={e => {deleteTask(index)}}> 
+									lista.map((item, index) => {return <li className="list-group-item ps-5 py-3 task" key={index}>{item} <button className="buttonStyle" type="button" onClick={e => {deleteTask(index)}}> 
 										x
 									</button></li>}) 
 								}</> 
